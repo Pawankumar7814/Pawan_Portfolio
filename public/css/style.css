@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Ysabeau+Infant:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+    background-color: #202731;
+    /* margin: 0% 10%; */
+    height: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+
+/* Header or navigation bar css starts */
+
+header {
+    border-bottom: 5px double beige;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+#navigation-bar .side-image li img {
+    border: 5px double white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    animation: bouncingAnimation 5s infinite linear;
+    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #9c6f32, 0 0 10px #9c6f32, 0 0 10px #9c6f32, 0 0 10px #9c6f32, 0 0 10px #9c6f32;
+}
+
+@keyframes bouncingAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(30px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.horizontal-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.horizontal-list li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.navbar .navbar-items {
+    transition: all 0.5s linear;
+}
+
+.navbar .navbar-items:hover {
+    transform: scale(1.1, 1.1);
+    border-bottom: 1px solid white;
+}
+
+.navbar .navbar-items a {
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+
+/* Header or navigation bar css ends */
+
+
+/* Main CSS Starts */
+
+main {
+    /* height: 9h; */
+    margin: 0px 10%;
+}
+
+
+/* CSS for About Section */
+
+#about {
+    background-color: rgba(62.95, 57.44, 57.44, 0.39);
+    width: 60vw;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 5% 0;
+}
+
+#about .intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#about .intro-container .name-title {
+    width: auto;
+    /* height: 25px; */
+    color: white;
+    font-size: 4rem;
+    /* font-family: Inter; */
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+    /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; */
+}
+
+#about .intro-container .profile-title {
+    /* width: 200px; */
+    /* height: 23px; */
+    color: rgba(255, 255, 255, 0.64);
+    font-size: 2rem;
+    /* font-family: Inter; */
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 2px;
+}
+
+#about .intro-container .title-underline {
+    width: 210px;
+    height: 0px;
+    border: 0.50px white solid;
+}
+
+#about .intro-container .short-intro {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#about .image-container {
+    position: relative;
+}
+
+#about .image-container .image-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 20% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotationAnimation 9s infinite ease-in-out;
+    border: 4px double turquoise;
+    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 10px #0fa, 0 0 10px #0fa, 0 0 10px #0fa, 0 0 10px #0fa;
+    /* background: repeating-linear-gradient(90deg, grey 50%, white); */
+}
+
+@keyframes rotationAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#about .image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #93a49e, 0 0 20px #cfe0da, 0 0 40px #ee262f, 0 0 30px #ee262f, 0 0 35px #ee262f;
+}
+
+
+/* CSS ends for About section */
+
+
+/* CSS starts for Skill section */
+
+.skills-display {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #35231666;
+}
+
+.skill-progress {
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+
+.skill-progress>div {
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+.skill-name {
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    height: 100%;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+/* Skill css ends here */
+
+
+/* certificate css starts */
+
+.certificate_container {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0px auto;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.certificate_container .certificate {
+    margin: 10px;
+    display: flex;
+}
+
+.certificate img {
+    width: 250px;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.certificate img:hover {
+    transform: scale(1.2, 1.2) translate(10px, 10px);
+}
+
+
+/* Cerficate css ends here */
+
+
+/* Project css starts here */
+
+.project_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 10px;
+}
+
+
+/* Project css ends here */
+
+
+/* Main CSS ends */
+
+
+/* Footer CSS Starts */
+
+footer {
+    margin-top: 50px;
+    height: 10vh;
+    border-top: 5px double beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0% 10%; */
+}
+
+.footer li {
+    border-radius: 3px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.footer li:hover {
+    border: 2px solid white;
+    transform: scale(1.2, 1.2);
+}
+
+.footer li a i {
+    font-size: 30px;
+}
+
+
+/* Footer CSS ends */
+
+
+/* media qery */
+
+@media(max-width: 1366px) {
+    .navbar {
+        width: 50%;
+    }
+    .navbar .navbar-items a {
+        font-size: 1.2rem;
+    }
+    #about {
+        background-color: rgba(62.95, 57.44, 57.44, 0.39);
+        width: 60vw;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        box-sizing: border-box;
+        padding: 5% 0;
+    }
+    /* About css */
+    #about .intro-container .name-title {
+        font-size: 3.5rem;
+    }
+    #about .intro-container .profile-title {
+        font-size: 1.7rem;
+    }
+    #about .intro-container .title-underline {
+        width: 180px;
+    }
+    #about .image-container .image-box {
+        width: 200px;
+        height: 200px;
+    }
+    #about .image-container img {
+        width: 125px;
+        height: 125px;
+        top: 35px;
+        left: 35px;
+    }
+}
