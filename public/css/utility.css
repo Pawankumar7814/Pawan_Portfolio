@@ -85,18 +85,14 @@ body::-webkit-scrollbar-thumb {
 /* Heading CSS */
 
 .heading-container {
-    background: repeating-linear-gradient(to top, grey, white);
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
-    padding: 10px;
 }
 
 .heading-container .heading_1 {
     color: black;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     text-align: left;
     width: fit-content;
     box-sizing: content-box;
